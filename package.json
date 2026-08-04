@@ -1,1 +1,30 @@
-{"name":"tatting-studio","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","test":"vitest run"},"dependencies":{"@codemirror/autocomplete":"^6.18.6","@codemirror/commands":"^6.8.1","@codemirror/lang-javascript":"^6.2.3","@codemirror/language":"^6.10.8","@codemirror/lint":"^6.8.5","@codemirror/state":"^6.5.2","@codemirror/theme-one-dark":"^6.1.2","@codemirror/view":"^6.36.5","lucide-react":"^0.468.0","react":"^19.0.0","react-dom":"^19.0.0"},"devDependencies":{"@vitejs/plugin-react":"^4.3.4","vite":"^6.0.7","vitest":"^2.1.8"}}
+{
+  "name": "tatting-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "vitest run",
+    "start": "vite --host 0.0.0.0 --open"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.18.6",
+    "@codemirror/commands": "^6.8.1",
+    "@codemirror/lang-javascript": "^6.2.3",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/lint": "^6.8.5",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.36.5",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  }
+}

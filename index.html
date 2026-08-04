@@ -1,1 +1,33 @@
-<!doctype html><html lang="it"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="theme-color" content="#352f2a"/><title>Tatting Studio</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#352f2a" />
+    <title>Tatting Studio</title>
+    <style>
+      .startup-help { font-family: system-ui, sans-serif; max-width: 620px; margin: 12vh auto; padding: 32px; color: #292522; background: #fffbff; border: 1px solid #ddd3df; border-radius: 20px; box-shadow: 0 8px 30px #332b3b22; }
+      .startup-help h1 { margin-top: 0; color: #6750a4; }
+      .startup-help code { display: block; margin: 10px 0; padding: 12px 16px; background: #292725; color: #f2ecf4; border-radius: 9px; user-select: all; }
+      .startup-help p { line-height: 1.55; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      if (window.location.protocol === 'file:') {
+        document.getElementById('root').innerHTML = `
+          <main class="startup-help" role="alert">
+            <h1>Tatting Studio</h1>
+            <p><strong>L'app non può essere aperta direttamente come file.</strong></p>
+            <p>I browser bloccano correttamente i moduli dell'app quando l'indirizzo inizia con <code>file://</code>. Avvia il server locale dalla cartella del progetto:</p>
+            <code>npm install</code>
+            <code>npm start</code>
+            <p>Apri quindi l'indirizzo mostrato nel terminale, normalmente <strong>http://localhost:5173</strong>. Su Windows puoi anche fare doppio clic su <strong>AVVIA-TATTING-STUDIO.bat</strong> nella cartella principale.</p>
+          </main>`;
+      } else {
+        import('/src/main.jsx');
+      }
+    </script>
+  </body>
+</html>
